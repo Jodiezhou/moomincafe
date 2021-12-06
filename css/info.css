@@ -1,0 +1,200 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Gamja Flower', cursive;
+}
+li{
+    list-style:none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+/*导航样式开始*/
+#header {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background: url('../headImg/logo.png') no-repeat center center;
+     background-size: 200px 200px;
+    background-position-x: 2%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+#divFont {
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    float: left;
+}
+
+.s1 {
+    font-size: 500%;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    color: white;
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s2 {
+    font-size: 120%;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s3 {
+    z-index: 11111;
+    margin-top: 50px;
+    float:right;
+    font-size: 300%;
+}
+
+.Menu {
+    position: absolute;
+    background-color: #000000b0;
+    opacity: 1;
+    display: block;
+    z-index: 10000;
+    margin-top: 150px;
+}
+
+#Menu1 li {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 140px;
+}
+
+#btn {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    width: 100px;
+    height: 40px;
+}
+
+#Menu1 li a:hover {
+    color: lightblue
+}
+h1{
+	font-size: 400%;
+}
+.infoHead, .Characters {
+    text-align: center;
+    font-size: 200%;
+}
+
+#time {
+    height: 700px;
+}
+
+#bgTime {
+    float: left;
+    width: 40%;
+    background: url('../infoImg/Moomin-Print-the-moomins-40284275-1748-2480.png') no-repeat left;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+#tit {
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+#night {
+    width: 100%;
+    text-align: center;
+}
+
+    #night li {
+    }
+    .ul1{
+        margin-top:100px;
+    }
+    .li1 {
+        font-size:200%;
+        font-weight:600;
+        margin-bottom:30px;
+    }
+.ul2 {
+    font-size: 180%;
+    margin-top: 50px;
+    line-height:30px;
+}
+.ul3 {
+    font-size: 180%;
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+#bgImg {
+    background: url('../infoImg/Scene-08411-01_00001_0000000.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+#btn_prev, #btn_next {
+    z-index: 11111;
+    position: absolute;
+    display: block;
+    width: 74px !important;
+    height: 74px !important;
+    margin-top: 130px;
+    display: none;
+}
+
+#btn_prev {
+    background: url(../images/hover_left.png) no-repeat left top;
+    left: 0px;
+}
+
+#btn_next {
+    background: url(../images/hover_right.png) no-repeat right top;
+    right: 0px;
+}
+
+#imgList {
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+}
+#imgList ul {
+    width: 20000px;
+}
+
+#imgList ul li {
+    position: relative;
+    width: 475px;
+    height: 475px;
+    float: left;
+}
+#txtList div,p{
+    width:80%;
+    margin:auto;
+}
+
+#txtList div{
+    font-size: 30px;
+}
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+h3{
+	font-size: 60px;
+}

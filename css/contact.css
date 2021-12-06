@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gamja Flower', cursive;
+}
+inout{
+    font-size:200%;
+}
+body{
+	        background-color: rgba(124, 221, 209, 1)
+        }
+/*������ʽ��ʼ*/
+#header {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background: url('../headImg/logo.png') no-repeat center center;
+    background-size: 200px 200px;
+    margin-bottom: 5px;
+}
+
+#divFont {
+    margin-left: 100px;
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    float: left;
+}
+
+.s1 {
+    font-size: 500%;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #5091eb 0%, #b5dafa 100%);
+    
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s2 {
+    font-size: 120%;
+    background: linear-gradient(to right, #5091eb 0%, #b4f9ed 100%);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s3 {
+    margin-top: 86px;
+    float: left;
+    width: 48px;
+    height: 48px;
+    font-size: 300%;
+}
+
+.Menu {
+    position: absolute;
+    width: 200px;
+    background-color: lightyellow;
+    opacity: 0.8;
+    display: block;
+    z-index: 9999999;
+    padding-bottom: 0px;
+    margin-top: 130px;
+}
+
+#Menu1 li {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+}
+
+    #Menu1 li a:hover {
+        color: lightblue
+    }
+
+#bgimg{
+    background:url(../img/1507105986122.png) no-repeat center center;
+    background-size:100% 100%;
+    width:80%;
+    margin:auto;
+    height:600px;
+}

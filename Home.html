@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>Home</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Gamja+Flower|Pacifico" rel="stylesheet">
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="scripts/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="scripts/jquery.SuperSlide.2.1.1.js"></script>
+
+
+    <script>
+        
+        $(function(){
+            var i=0;
+            $('.a-nav').click(function(){
+                if(i==0){
+                    $('.Menu').show(1000);
+                    i++;
+                }else{
+                    $('.Menu').hide(1000);
+                    i=0;
+                }
+            })
+        })
+    </script>
+	<style>
+		a {
+		color: #5091eb;
+            text-decoration: none;
+        }
+        body{
+	        background-color: rgba(153, 245, 232, 1)
+        }
+	</style>
+</head>
+<body style="position:relative;">
+    
+    <div id="header">
+        <div id="divFont">
+            <p class="s1">MOOMIN CAFE</p>
+            <p class="s2">1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</p>
+        </div>
+		<div class="s3">
+                <ul style="display:block;z-index:9999999999;position:absolute;right:0;">
+                    <li style="float: left; width: 50px;"></li>
+                    <li style="float: left; line-height: 88px;width: 48px;"><a style="color: #4bc5e3;" href="javascript:;" class="a-nav">☰</a></li>
+                </ul>
+                <div class="Menu">
+                    <ul id="Menu1">
+                        <li><a href="Home.html">Home</a></li>
+	                    <li><a href="Info.html">Information</a></li>
+	                    <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Gift_Shop.html">Gift Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    <div class="main_visual">
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li><img src="homeImg/Part1/part1-1.jpg" /></li>
+                    <li><img src="homeImg/Part1/part1-2.jpg" /></li>
+                    <li><img src="homeImg/Part1/part1-3.jpg" /></li>
+                    <li><img src="homeImg/Part1/part1-4.jpg" /></li>
+                    <li><img src="homeImg/Part1/part1-5.jpg" /></li>
+                </ul>
+            </div>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+
+        <script type="text/javascript">
+            jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+        </script>
+
+    </div>
+    <div id="body">
+        <div id="bgimg">
+            <img src="homeImg/Moomin_family.png" alt="">
+        </div>
+        <div id="menu">
+            <div style="width:40%;">
+                <img src="homeImg/20171024045747_92.jpg" />
+            </div>
+            <div style="width:60%;">
+                <img src="homeImg/6841645387_1ce4ca4912_b.jpg" />
+            </div>
+            <div style="width:60%;text-align:center;margin-top:7%;text-shadow: 0 0 0.5em #0ae642, 0 0 0.2em #f8f3f3;">
+                <a style="color:#fbfbfb;" href="menu.html">MENU>>></a>
+            </div>
+        </div>
+		<div style="clear:both;"></div>
+        <div id="about">
+            <div style="width:40%;text-align:center;text-shadow: 0 0 0.5em #0ae642, 0 0 0.2em #f8f3f3;margin-top:16%;">
+                <a style="color:#fbfbfb;" href="Info.html">Information>>></a>
+            </div>
+            <div style="width:60%;">
+                <img src="homeImg/s_0n75.png" />
+            </div>
+        </div>
+        <div id="hour" style="">
+            <div style="width:55%;">
+                <img src="homeImg/SJ_590_01.jpg" />
+            </div>
+            <div style="width:45%;text-align:center;text-shadow: 0 0 0.5em #0ae642, 0 0 0.2em #f8f3f3;margin-top:12%;">
+                <a style="color:#fbfbfb;" href="contact.html">Contact>>></a>
+            </div>
+        </div>
+        <div id="giftShop">
+            <div style="width:50%;text-align:center;text-shadow: 0 0 0.5em #0ae642, 0 0 0.2em #f8f3f3;margin-top:21%;">
+                <a style="color:#fbfbfb;" href="Gift_Shop.html">GIFT SHOP>>></a>
+            </div>
+            <div style="width:50%;">
+                <img src="homeImg/moomincafe2-lostness-co-uk.jpg" />
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="foot" style="padding-top: 100px;">
+        <div class="footer" style="background: #fff">
+            <img src="images/1.png" alt="">
+            <a href="#header"><img src="images/2.png" alt=""></a>
+            <img src="images/3.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

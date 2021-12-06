@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Info</title>
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Gamja+Flower|Pacifico" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <meta charset="utf-8" />
+    <script>
+        var temp = -475 * 4 * 2
+        var dir = -1;
+        $(function () {
+
+            $("#imgList").hover(function () {
+                $("#btn_prev,#btn_next").stop(false, true).fadeIn()
+            }, function () {
+                $("#btn_prev,#btn_next").stop(false, true).fadeOut()
+            })
+            $("#imgList > ul li").css({
+                left: -475 * 4 * 2
+            })
+
+            var ObjArr = new Array();
+            var a = 11;
+            for (var i = 0; i < 4; i++) {
+                ObjArr[i] = ($("#imgList >ul >li").eq(a--).clone());
+            }
+            for (var i = 0; i < 4; i++) {
+                $("#imgList >ul").prepend($(ObjArr[i]));
+            }
+            for (var i = 0; i < 4; i++) {
+                var $dtLi = $("#imgList >ul >li").eq(i + 4).clone();
+                $("#imgList >ul").append($dtLi);
+            }
+
+
+            $("#imgList > a").eq(0).click(function () {
+                dir = 1;
+                if (temp == 0) {
+                    $("#imgList >ul>li").css({
+                        left: -475 * 12
+                    });
+                    temp = -475 * 12;
+                }
+                $("#imgList > ul li").animate({
+                    left: temp + (dir * 475)
+                });
+                temp = temp + (dir * 475);
+            });
+            $("#imgList > a").eq(1).click(function () {
+                dir = -1;
+                if (temp == -475 * 16) {
+                    $("#imgList >ul>li").css({
+                        left: -475 * 4
+                    });
+                    temp = -475 * 4;
+                }
+                $("#imgList > ul li").animate({
+                    left: temp + (dir * 475)
+                });
+                temp = temp + (dir * 475);
+            });
+            $("#imgList >ul>li").live("click", function () {
+                var index = $(this).index();
+                if (index > 11) {
+                    index = index - 12;
+                }
+                $("#txtList >div:eq(" + index + ")").show().siblings().hide();
+                $("#txtList p").show();
+            })
+        });
+    </script>
+    <script>
+        //导航
+        $(function(){
+            var ii=0;
+            $('.a-nav').click(function(){
+                if(ii==0){
+                    $('.Menu').show(1000);
+                    ii++;
+                }else{
+                    $('.Menu').hide(1000);
+                    ii=0;
+                }
+            })
+        })
+    </script>
+	<style>
+		a {
+		color: #5091eb;
+            text-decoration: none;
+        }
+        body{
+	        background-color: rgba(96, 179, 168, 1)
+        }
+	</style>
+</head>
+
+<body>
+<div id="header">
+    <div id="divFont">
+        <p class="s1">MOOMIN CAFE</p>
+        <p class="s2">1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</p>
+    </div>
+    <div class="s3">
+        <ul style="display:block;z-index:9999999999;position:absolute;right:0;">
+            <li style="float: left; width: 50px;"></li>
+            <li style="float: left; line-height: 88px;width: 48px;"><a style="color: #4bc5e3;" href="javascript:;" class="a-nav">☰</a></li>
+        </ul>
+        <div class="Menu">
+            <ul id="Menu1">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Info.html">Information</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Gift_Shop.html">Gift Shop</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+    <div class="infoHead"><h1>Information</h1></div>
+    <div id="time">
+        <div id="bgTime"></div>
+        <div id="tit">
+            <div id="night">
+                <ul class="ul1">
+                    <li class="li1">Hours&Locations</li>
+                    <li><em>1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</em></li>
+                </ul>
+                <ul class="ul2">
+                    <li>- DAY -</li>
+                    <li>11AM - 4PM (LAST ORDER)</li>
+                    <li>5PM (CLOSE)</li>
+                </ul>
+                <ul class="ul3">
+                    <li>- NIGHT -</li>
+                    <li>SUN-THU 6:00PM - 12:00AM</li>
+                    <li>(LAST ORDER: FOOD 10:30PM / DRINK: 11:30AM)</li>
+                    <li>FRI & SAT 6:00PM - 1:00AM</li>
+                    <li>(LAST ORDER: FOOD 11:00PM / DRINK: 12:30AM)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="bgImg"></div>
+    <div class="Characters"><h1>Characters</h1></div>
+    <div id="imgList">
+        <ul>
+            <li>
+                <img src="infoImg/moominhouse.png" />
+            </li>
+            <li>
+                <img src="infoImg/moominpappa.png" />
+            </li>
+            <li>
+                <img src="infoImg/sniff.png" />
+            </li>
+            <li>
+                <img src="infoImg/snork.png" />
+            </li>
+
+            <li>
+                <img src="infoImg/moomintroll.png" />
+            </li>
+            <li>
+                <img src="infoImg/moominmamma.png" />
+            </li>
+            <li>
+                <img src="infoImg/little-my.png" />
+            </li>
+            <li>
+                <img src="infoImg/hattifatteners.png" />
+            </li>
+
+            <li>
+                <img src="infoImg/snorkmaiden.png" />
+            </li>
+            <li>
+                <img src="infoImg/snufkin.png" />
+            </li>
+            <li>
+                <img src="infoImg/stinky.png" />
+            </li>
+            <li>
+                <img src="infoImg/too-ticky.png" />
+            </li>
+        </ul>
+        <a href="javascript:;" id="btn_prev"></a>
+        <a href="javascript:;" id="btn_next"></a>
+    </div>
+    <div id="txtList">
+        <div class="show">
+            <h3>Snorkmaiden</h3><br />
+Snorkmaiden is Moomintroll’s friend and playmate. They like each other a lot and love hanging out together. Snorkmaiden is happy and energetic, although her habit of suddenly changing her mind can sometimes irritate people a bit.Snorkmaiden is a daydreamer and often imagines what her prince charming will be like. She is also a little vain and flirtatious, but can be very resourceful when she’s in a tight spot. In the book Comet in Moominland, Snorkmaiden comes up with a way to get rid of the octopus that is threatening Moomintroll. Snork is Snorkmaiden’s brother. They are both Snorks, a species that differs slightly from the Moomins. One special characteristic of Snorks is that they always change colour according to their mood. When Snorkmaiden is upset, she turns light green. Snorkmaiden has a fringe, which she always keeps neatly combed. She also wears a gold anklet. We first meet the Snorkmaiden in the second book of the Moomin series, Comet in Moominland, and she appears in almost all of the following books.
+        </div>
+        <div class="hide">
+            <h3>Snufkin</h3><br />
+Snufkin is a philosophical vagabond who wanders the world fishing and playing the harmonica. He carries everything he needs in his backpack, as he believes that having too much stuff makes life overly complicated.
+
+Snufkin is easygoing and carefree, and enjoys thinking about things. He always comes and goes as he pleases. He has plenty of admirers inMoominvalley, especially among the smaller and more timid inhabitants. Moomintroll is his best friend and Little My is his half sister. Snufkin is also the son of the Mymble and the Joxter.
+
+Snufkin meets every new person and event with curiosity and a warm heart. He enjoys spending time with the Moomins in Moominvalley, but in November he always goes south for the winter, only returning to Moominvalley in the spring.
+
+The enigmatic Snufkin does not avoid other people’s company, but he does prefer to travel alone. On his journeys, he explores new places and tries his luck at fishing. Snufkin loves to go wandering at night and especially in the moonlight. He never asks the names of the new places he visits, but simply enjoys the journey itself.
+
+Snufkin always wears a dark green hat with a wide brim and a similarly coloured, shabby old coat. He first joins the Moomins on their adventures in the book Comet in Moominland.
+        </div>
+        <div class="hide">
+            <h3>Stinky</h3><br />
+
+Stinky is a small and irate creature who is always playing practical jokes on the other residents of Moominvalley. He does this out of spite – he really enjoys fooling people and pinching things. But he always gets found out.
+
+Stinky’s other hobbies include eavesdropping, vandalism and duping the police. Stinky is very proud of his reputation as a crook and will go to any lengths to maintain it. Due to his pranks, people don’t tend to invite Stinky to parties or to join in with other activities, but he shows up uninvited anyway.
+
+Stinky is a little simple and thinks only about himself. Stinky will steal anything, but he prefers valuable objects. Although he causes a lot of trouble, the Moomin family find it rather charming that they know a real rogue.
+
+This black hairball appears in the first comic strip aboutMoomintroll.
+        </div>
+        <div class="hide">
+            <h3>Too-ticky</h3><br />
+           
+Too-Ticky is a dear friend of the Moomin family. She is wise woman who knows how to solve all sorts of dilemmas in a sensible and practical way. Too-Ticky is like a little whirlwind and always dives straight into action, cleaning up and helping the Moomins to keep everything in order.
+
+Too-Ticky stands out from the rest of the Moominvalley crowd, as she doesn’t hibernate. She spends the winter in the Moomin family’s bathhouse. Here, she makes herself as comfortable as possible and the invisible shrews keep her company.
+
+Although Too-Ticky is able to repair anything, she believes that sometimes you just have to accept that not everything that gets broken can be fixed. She doesn’t want to tell others how to live, as she believes that everyone learns through experience.
+
+Too-Ticky wears a striped shirt, dark trousers and a bobble hat. We first meet her in the book Moominland Midwinter, in whichMoomintroll wakes up in the middle of hibernation and learns to understand winter with Too-Ticky’s help.
+        </div>
+        <div class="hide">
+            <h3>Moominhouse</h3><br />
+The Moomins live in a round, blue house that’s the same shape as a ceramic fireplace. The house originally had only two storeys, but the numerous visitors soon made it feel cramped. The Moomins extended the house, which now has three storeys and a cellar.
+
+Moominpappa is very proud of this house, which he built with his own two hands. It has weathered storms and earthquakes, and is big enough for everyone – Moomin, his family and the friends that live with them – to have their own room.
+
+The kitchen, salon and bathroom are on the ground floor. The first floor houses the Moomin family’s bedrooms and the guestrooms. When Moominpappa wants to write his memoirs, he heads for his study on the second floor.
+
+You can study the rooms in the Moominhouse in more detail using the map you’ll find in the book Finn Family Moomintroll. You’re probably also wondering why the house looks like a ceramic fireplace. Legend has it that, in the old days, the Moomins used to live behind Tove’s ceramic fireplace.
+        </div>
+        <div class="hide">
+            <h3>Moominpappa</h3><br />
+            
+Moominpappa is boyish and adventurous, but still proud of being the head of the family. He enjoys philosophical thinking and always wants to be on the scene whenever something surprising happens inMoominvalley. Moominpappa considers himself to be very knowledgeable and an expert in many fields, and is always willing to offer advice to others.
+
+Moominpappa is ready to do anything for his family. He enjoys living in Moominvalley, but is also curious and ready to try new things. Adventures are always welcome – and luckily they often come his way. Moominpappa loves secrets, even though sometimes he accidentally lets them slip out.
+
+Moominpappa is also a dreamer who likes whisky and the company of dubious friends. He enjoys pondering life’s big issues and often makes notes of his observations. Writing is very important to Moominpappa. He truly loves the sea and believes himself to be a skilled sailor and fisherman.
+
+In his youth, Moominpappa went on some great adventures, which he always loves to recount whenever the opportunity arises. One day, he takes up his quill and starts writing his memoirs.
+
+You can recognise Moominpappa from his top hat and walking stick. We meet Moominpappa in the first Moomin book, The Moomins and the Great Flood, and he tells us all about the great deeds of his youth in Moominpappa’s Memoirs.
+        </div>
+        <div class="hide">
+            <h3>Sniff</h3><br />
+Sniff is not a Moomin, but he lives in the Moominhouse just likeLittle My. Although he’s eager to join in with whatever the Moomins are up to, his timidity means that he won’t do anything dangerous. He’s very good-natured and sometimes a little cowardly.
+
+Sniff loves all valuable things and gets excited whenever he encounters some. Shiny, sparkly objects in particular fascinate him. Sniff makes many plans to get rich, even though they usually don’t succeed. Owning things is, however, very important to him – and he’s something of a gourmet, too.
+
+Many of the Moominvalley residents couldn’t live without the sea, but Sniff is terrified of water and doesn’t even dare to go on the jetty. Sniff loves to investigate new things with others, but he soon gets tired and is always the first in the group to quit. Sniff is selfish, lazy and easily bored, and so can’t be bothered to stick at anything for very long.
+
+It was chance that brought Sniff to the Moominhouse: his parents,The Muddler and The Fuzzy, lost him when he was little, and the Moomins found him while they were searching for Moominpappa, who had gone missing. The Moomins then took Sniff in to live with them.
+
+You can recognise Sniff by his large, pointy ears and long tail. He first joins the Moomins on their adventures in the book The Moomins and the Great Flood.
+        </div>
+        <div class="hide">
+            <h3>Snork</h3><br />
+Snork is the Snorkmaiden’s diligent and ingenious brother. He’s exceptionally talented at building new machines and coming up with new inventions. The residents of Moominvalley often ask Snork for help in solving tricky problems.
+
+Snork is also good with his hands and sometimes constructs his own complex inventions in his workshop. It was here that he built his bizarre flying contraption. As an avid reader, Snork researches things for himself and then passes on his knowledge and observations to others.
+
+When required, Snork rolls up his sleeves and skilfully organises even the most demanding of projects. Precision is crucial to him. He won’t hesitate to explain how he thinks problems can be solved, which is why he’s considered a bit of a know-it-all.
+
+Snork has a fringe and wears square-framed glasses. Like his sister,Snorkmaiden, he also changes colour according to his mood. We first meet him in the book Comet in Moominland.
+        </div>
+        <div class="hide">
+            <h3>Moomintroll</h3><br />
+He’s an agreeable fellow who’s interested in everything he sees. The world is full of exciting things to investigate, but Moomintroll particularly loves collecting rocks and shells. He also loves the sea, as does the whole Moomin family. Many visitors pop by the Moominhouse, and Moomintroll is always happy when he’s spending time with his friends. He has great faith in his friends and gets worried if one of them is unhappy. Moomintroll is very sensitive himself, but he never bears a grudge. Moomintroll thinks that Moominvalley is the safest and most interesting place in the world. That’s why he’s so curious and brave – he can fulfil his desire to understand strange things and weird creatures without the need to fear them. The only thing that makes Moomintroll feel bad is being left alone. Moomintroll is a dreamer and a thinker, and the maverick vagabondSnufkin is his best friend. Every November, when Snufkin goes south for the winter, he leaves Moomintroll a special letter. In it, he promises to return to Moominvalley on the first day of spring. Moomintroll loves Moominmamma and his family above all else. There’s no problem that Moominmamma can’t solve. And whenMoominpappa invents a good excuse for an adventure, Moomintroll is always eager to tag along. When Snorkmaiden becomes his girlfriend, Moomintroll learns that love can sometimes make you feel wistful and even downright sad. We meet Moomintroll right away in the first Moomin book, The Moomins and the Great Flood. Moomintroll doesn’t reach adulthood during the Moomin stories, but he does grow up a lot in the book Moominland Midwinter. Moomintroll is easily recognisable from his gentle, round appearance and the tuft on the end of his tail. All Moomins have large eyes and small ears.
+        </div>
+        <div class="hide">
+            <h3>Moominmamma</h3><br />
+Moominmamma is a calm and collected mother who never lets little things get on her nerves. She ensures that the Moominhouse is always a safe and loving place – both for her family and for visitors.
+
+Moominmamma brings up her family so deftly that they barely notice they’re being parented. She wants everyone to be happy and values everyone’s individuality, but she will intervene if someone wrongs someone else. She isn’t bothered by others’ tomfoolery, as she believes that people learn a lot from their mistakes.
+
+No-one is ever unhappy in Moominmamma’s company: she’s always ready to help and console. The residents of Moominvalley trust her, as Moominmamma never reveals their secrets. Whenever visitors pop by the Moominhouse, Moominmamma wants to know when their birthdays are. The birthday boy or girl always gets to choose dessert.
+
+It’s thanks to Moominmamma that everything runs so smoothly in the Moomin household. She finds solutions to even the most difficult dilemmas and can always see the silver lining in every cloud. WhenMoominpappa accidentally breaks a plate, Moominmamma says: I’m glad it’s broken, it was pretty ugly. When Moominmamma wants a moment to herself, she goes out collecting shells or makes bark boats.
+
+Moominmamma wears an apron and carries a handbag. Her life gets turned upside down when she loses her handbag, as it contains all kinds of important things in case of emergency, such as wire, stomach powder and candies. When her handbag is found, she arranges a huge party complete with speeches and fireworks.
+        </div>
+        <div class="hide">
+            <h3>Little My</h3><br />
+Little My lives with the Moomins in the Moominhouse, even though she isn’t related to them. Little My is brave and fearless, and is eager to join the Moomins on their adventures. Sometimes she really seems to love small catastrophes. Little My is fiery and irritable – but also happy and friendly. Small things may easily annoy her, but she never does mean things on purpose. Sometimes, when others are being overly sentimental, she brings them quickly back to earth with her acute observations. Little My always wants to decide things for herself. Mess and untidiness don’t bother her at all: in fact, life is much more exciting that way. Being quite small, she can hide in a milk jug or amongst the ladles and whisks in a kitchen drawer. Sometimes she goes to sleep inSnufkin’s pocket. Little My likes to find out people’s secrets, but she never reveals them to others. In spite of her wild and reckless acts, Little My is honest and reliable. She’s at home in every situation – she’s prepared for anything. Little My was born on midsummer night. The Moomin family took her in when she was still very young. The elder Mymble is her mother and Snufkin is her half brother. She is also sister to the younger Mymble. Little My wears her bright, copper-red hair in an onion-shaped bun on top of her head and usually wears a red dress. Little My first appears in Moominpappa’s Memoirs.
+        </div>
+        <div class="hide">
+            <h3>Hattifatteners</h3><br />
+The Hattifatteners are silent beings that are forever wandering around in large herds. The only thing that interests them is reaching the horizon – and once they reach it, they continue on their journey.
+
+The white, faceless Hattifatteners are deaf and dumb. They don’t need to eat or sleep. They pack themselves tightly together in large herds, and stand there trembling. Nothing except roaming interests them.
+
+The Hattifatteners resemble thin mushrooms. Their large, unfocused eyes change colour according to their surroundings. During thunderstorms, the Hattifatteners become highly charged with electricity and it’s a good idea to avoid them. You can sense their presence as an electrical charge in the air. At other times they’re harmless.
+
+On Midsummer day, the Hattifatteners gather on their own island for an annual meeting, after which they set out roaming once more. The Moomins first encounter the Hattifatteners in the book The Moomins and the Great Flood.
+        </div>
+    </div>
+<div class="foot" style="padding-top: 100px;">
+    <div class="footer" style="background: #fff">
+        <img src="images/1.png" alt="">
+        <a href="#header"><img src="images/2.png" alt=""></a>
+        <img src="images/3.png" alt="">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Gamja+Flower|Pacifico" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="scripts/contict.js"></script>
+	<style>
+		a {
+		color: #5091eb;
+            text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+    <!--<div id="header">
+        <div id="divFont">
+            <p class="s1">MOOMIN CAFE</p>
+            <p class="s2">1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</p>
+        </div>
+        <div class="s3"><a href="#">≡</a></div>
+        <div class="Menu">
+            <ul id="Menu1">
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="Gift_Shop.html">Gift Shop</a></li>
+                <li><a href="Home - 复制.html">Home</a></li>
+                <li><a href="Info - 复制.html">Info</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </div>-->
+    <div id="header">
+        <div id="divFont">
+            <p class="s1">MOOMIN CAFE</p>
+            <p class="s2">1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</p>
+        </div>
+        <div class="s3">
+            <ul style="display:block;z-index:9999999999;position:absolute;right:0;">
+                <li style="float: left; width: 50px;"></li>
+                <li style="float: left; line-height: 88px;width: 48px;"><a style="color: #4bc5e3;" href="javascript:;" class="a-nav">☰</a></li>
+            </ul>
+            <div class="Menu">
+                <ul id="Menu1">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Info.html">Information</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Gift_Shop.html">Gift Shop</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div style="width:100%;margin:auto">
+	
+        <div id="contact" style="width:100%;text-align:center; height:80px;margin-top:30px;margin-bottom: 30px; font-size:500%">Contact</div>
+		
+        <hr style="width:78%; margin: 0 auto; height:2px; border-color:black; background-color:black" />
+		<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+			<div style="margin-left:220px;margin-top:50px">
+				<input style="width:85%; height:60px; border-width:3px;font-size:200%;border-color:#000000" type="text" id="name" placeholder="Name*" value="" />
+			</div>
+			<div style="margin-left:220px;margin-top:10px">
+				<input style="width:85%; height:60px; border-width:3px;font-size:200%;border-color:#000000" type="text" id="email" placeholder="Email*" value="" />
+			</div>
+			<div style="margin-left:220px;margin-top:10px">
+				<input style="width:85%; height:60px; border-width:3px;font-size:200%;border-color:#000000" type="text" name="phone" id="phone" placeholder="Phone Number*" value="" />
+			</div>
+			<div style="margin-left:220px;margin-top:10px">
+				<select id="zhi" style="width:85.4%; height:60px; border-width:3px;font-size:200%;border-color:#000000;">
+					<option>What are you getting in touch about?</option>
+					<option>Feedback on a Dining Experience</option>
+					<option>Reservations</option>
+					<option>Lost Item</option>
+					<option>Receipt Request</option>
+					<option>Private Dining/Event Inquiry</option>
+					<option>Donation Request</option>
+					<option>Press/Marketing Inquiry</option>
+				</select>
+			</div>
+			</div>
+			<div style="margin-left:220px;margin-top:10px">
+				<input style="width:85%; height:60px; font-size:200%;border-width:3px;border-color:#000000" type="text" id="message" placeholder="Your Message" />
+			</div>
+			<div style="margin-left:220px;margin-top:15px;width:100px;">
+				<input style="width:100px; height:60px; font-size:200%;border-width:3px;border-color:#000000; background-color:white" type="submit" value="SEND" id="login_button"/>
+			</div>
+		</form>
+    <div id="bgimg"></div>
+    <div class="foot" style="padding-top: 100px;">
+        <div class="footer" style="background: #fff">
+            <img src="images/1.png" alt="">
+            <a href="#header"><img src="images/2.png" alt=""></a>
+            <img src="images/3.png" alt="">
+        </div>
+    </div>
+	
+    <script>
+        
+        $(function(){
+            var i=0;
+            $('.a-nav').click(function(){
+                if(i==0){
+                    $('.Menu').show(1000);
+                    i++;
+                }else{
+                    $('.Menu').hide(1000);
+                    i=0;
+                }
+            })
+        })
+		var submitbtn = document.getElementById("login_button");
+		
+		submitbtn.onclick = function validateForm()
+		{	
+			var name=document.forms["myForm"]["name"].value;
+			var email=document.forms["myForm"]["email"].value;
+			var phone=document.forms["myForm"]["phone"].value;
+			var message=document.forms["myForm"]["message"].value;
+
+			if (name==null || name=="")
+			{
+				alert("Name error");
+				return false;
+			}
+
+			else if(email==null || email==""){
+				alert("Email error");
+				return false;
+			}
+			else if(phone==null || phone=="")
+			{
+				alert("Phone error");
+				return false;
+			}
+			else if(message==null || message=="")
+			{
+				alert("Message error");
+				return false;
+			}
+			else{
+				alert("Submitted");
+			}
+		}
+		
+
+    </script>
+</body>
+</html>

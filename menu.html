@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Gamja+Flower|Pacifico" rel="stylesheet">
+    <link href="css/SizeAll.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script>
+        
+        $(function(){
+            var i=0;
+            $('.a-nav').click(function(){
+                if(i==0){
+                    $('.Menu').show(1000);
+                    i++;
+                }else{
+                    $('.Menu').hide(1000);
+                    i=0;
+                }
+            })
+        })
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #big {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        #titleMenu {
+            height: 150px;
+        }
+
+            #titleMenu ul li {
+                float: left;
+            }
+
+
+        #giftShop {
+		    margin: 0 auto;
+			width: 100px;	
+            font-family: 'Gamja Flower', cursive;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 70px;
+        }
+
+        #priMenu {
+            font-family: 'Gamja Flower', cursive;
+            font-weight: bold;
+        }
+        #priMenu table,#txtMenu table{
+            width: 100%;
+        }
+        #priMenu td{
+            text-align: center;
+            width: 20%;
+        }
+        #priMenu td img{
+            width: 100%;
+        }
+            
+
+        #txtMenu {
+
+        }
+
+            #txtMenu td {
+                font-family: 'Gamja Flower', cursive;
+                font-size: 200%;
+                font-weight: bold;
+                width: 20%;
+                text-align: center;
+            }
+
+        #textMenu {
+            /*text-align:center;*/
+            margin-top: 3%;
+        }
+
+            #textMenu ul {
+                margin-bottom: 20px;
+            }
+
+                #textMenu ul li {
+                    font-family: 'Gamja Flower', cursive;
+                    font-size: 120%;
+                    /*text-align:center;*/
+                    margin-top: 1%;
+                    margin-left: 15%;
+                    word-wrap:break-word
+                }
+
+        #menu li {
+            margin-top: 20%;
+            margin-left: 30%;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        #sublist{
+	        margin-left: 15%;
+        }
+
+        a {
+		color: #5091eb;
+            text-decoration: none;
+        }
+
+        #menu {
+            position: absolute;
+            top: 13%;
+            left: 84.9%;
+            width: 15%;
+            height: 60%;
+            background-color: #211012;
+            display: none;
+        }
+
+            #menu li a {
+                color: white
+            }
+
+                #menu li a:hover {
+                    background-color: lightpink
+                }
+                body{
+	        background-color: rgba(66, 235, 213, 1)
+        }
+    </style>
+
+</head>
+<body>
+    <div id="big">
+        <div id="header">
+            <div id="divFont">
+                <p class="s1">MOOMIN CAFE</p>
+                <p class="s2">1 Chome-11-5 Kichijōji Honchō, Musashino-shi, Tōkyō-to 180-0004, Japan</p>
+            </div>
+            <div class="s3">
+                <ul style="display:block;z-index:9999999999;position:absolute;right:0;">
+                    <li style="float: left; width: 50px;"></li>
+                    <li style="float: left; line-height: 88px;width: 48px;"><a style="color: #4bc5e3;" href="javascript:;" class="a-nav">☰</a></li>
+                </ul>
+                <div class="Menu">
+                    <ul id="Menu1">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Info.html">Information</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Gift_Shop.html">Gift Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="giftShop" style="text-align:center;">MENU</div>
+        <div id="priMenu">
+            <table>
+                <tr>
+                    <td><img src="image/menu1.png" /></td>
+                    <td><img src="image/menu2.png" /></td>
+                    <td><img src="image/menu3.png" /></td>
+                    <td><img src="image/menu41.png" /></td>
+                    <td><img src="image/menu5.png" /></td>
+                </tr>
+            </table>
+        </div>
+        <div id="txtMenu">
+            <table>
+                <tr>
+                    <td>Pasta</td>
+                    <td>Rice</td>
+                    <td>Dessert</td>
+                    <td>Salad</td>
+                    <td>Beverage</td>
+                </tr>
+            </table>
+        </div>
+        <div id="textMenu">
+            <ul>
+                <li class="licenter" style="font-family: 'Pacifico', cursive;font-weight:bold;font-size:20px;margin-left:47%;">Pasta</li>
+                <li><hr style="width:150px;height:5px;border:none;border-top:3px ridge black;margin-left:34%;" /></li>
+                <div id="sublist">
+                <li>Seafood pasta with tomato sauce and herbs ............................................................320</li>
+                <li>Chicken spaghetti with vegetable chips and cream sauce..........................................280</li>
+                <li>Nordic plate ...............................................................................................................340</li>
+                </div>
+            </ul>
+            <ul>
+                <li class="licenter" style="font-family: 'Pacifico', cursive;font-weight:bold;font-size:20px;margin-left:47%;">Rice</li>
+                <li><hr style="width:150px;height:5px;border:none;border-top:3px ridge black;margin-left:34%;" /></li>
+                <div id="sublist">
+                <li>Mushroom beef stew....................................................................................................300</li>
+                <li>Chefs special curry.....................................................................................................280</li>
+                </div>
+            </ul>
+
+            <ul>
+                <li class="licenter" style="font-family: 'Pacifico', cursive;font-weight:bold;font-size:20px;margin-left:46%;">Dessert</li>
+                <li><hr style="width:150px;height:5px;border:none;border-top:3px ridge black;margin-left:34%;" /></li>
+                <div id="sublist">
+                <li>Moomin house pancake.................................................................................................420</li>
+                <li>Moomin mama tart......................................................................................................200</li>
+                <li>Mixed berry jam with vanilla soft ice cream..............................................................180</li>
+                <li>**after meal you may request to take a clean identical cup home!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>Hattifatteners ’sundae..............................................................................................200</li>
+                <li>Little mice sundae.......................................................................................................200</li>
+                </div>
+            </ul>
+
+            <ul>
+                <li class="licenter" style="font-family: 'Pacifico', cursive;font-weight:bold;font-size:20px;margin-left:46.5%;"> Salad</li>
+                <li><hr style="width:150px;height:5px;border:none;border-top:3px ridge black;margin-left:34%;" /></li>
+                <div id="sublist">
+                <li>Hattifattener’s salad.................................................................................................180</li>
+                <li>Nordic salmon salad.....................................................................................................260</li>
+                </div>
+            </ul>
+            <ul>
+                <li class="licenter" style="font-family: 'Pacifico', cursive;font-weight:bold;font-size:20px;margin-left:45.5%;">Beverage</li>
+                <li><hr style="width:150px;height:5px;border:none;border-top:3px ridge black;margin-left:34%;" /></li>
+                <div id="sublist">
+                <li>Moomin latte (ice/hot) ...............................................................................................160</li>
+                <li>Green tea au lait (ice/hot)........................................................................................160</li>
+                <li>Chocolate au lait (ice/hot).........................................................................................180</li>
+                <li>Coffee (ice/hot)..........................................................................................................120</li>
+                <li>Shima-lemon soda (ice).................................................................................................160</li>
+                </div>
+            </ul>
+        </div>
+        <div id="priture">
+            <img style="width:100%" src="image/moomin.png" />
+        </div>
+    </div>
+    <ul id="menu">
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="Gift_Shop.html">Gift Shop</a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Info.html">Info</a></li>
+        <li><a href="menu.html">Menu</a></li>
+    </ul>
+    <div class="foot" style="padding-top: 100px;">
+        <div class="footer" style="background: #fff">
+            <img src="images/1.png" alt="">
+            <a href="#big"><img src="images/2.png" alt=""></a>
+            <img src="images/3.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Gamja Flower', cursive;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/*导航样式开始*/
+#header {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background: url('../headImg/logo.png') no-repeat center center;
+     background-size: 200px 200px;
+    background-position-x: 2%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    //background-color: #AAEFFF;
+    margin-bottom: 5px;
+}
+
+#divFont {
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    float: left;
+}
+
+.s1 {
+    font-size: 500%;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #80aded 0%, #869cf3 100%);
+    
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s2 {
+    font-size: 120%;
+    background: linear-gradient(to right, #80aded 0%, #869cf3 100%);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s3 {
+	z-index: 11111;
+    margin-top: 50px;
+    float: right;
+    font-size: 300%;
+}
+
+
+#Menu1 li{
+    font-size: 100%;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    line-height:140px;
+}
+
+#btn{
+	background-color: skyblue;
+	border: 2px solid black;
+	width: 100px;
+	height: 40px;
+}
+    #Menu1 li a:hover {
+        color: #5091eb;
+    }
+/*主题样式开始*/
+#bgimg {
+    width: 100%;
+
+}
+#bgimg img{
+    width: 100%;
+
+}
+#body {
+    margin: auto;
+    width: 100%;
+}
+
+#menu #about #hour #giftShop {
+    margin-top: 0px;
+    width: 100%;
+}
+
+#body a {
+    font-size: 5em;
+}
+
+#menu div {
+    float: left;
+}
+
+#about div {
+    float: left;
+}
+
+#hour div {
+    float: left;
+}
+
+#giftShop div {
+    float: left;
+}
+/*foot开始*/
+#foot {
+	position:absolute;
+	bottom:0;
+    /*border: 1px solid black;
+            border-left: 0px;
+            border-right: 0px;*/
+    width: 100%;
+    height: 68px;
+    background-color: #AAEFFF;
+    background: url(../homeImg/QQ截图20181206132238.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+    #foot div {
+
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+
+    #foot a {
+        font-size: 400%;
+    }
+
+

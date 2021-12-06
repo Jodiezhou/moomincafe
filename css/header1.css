@@ -1,0 +1,102 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Gamja Flower', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*导航样式开始*/
+#header {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background: url("../headImg/logo.png") no-repeat center center;
+    background: url("../headImg/logo.png") no-repeat center center;
+    background-size: 200px 200px;
+    background-position-x: 2%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+
+#divFont {
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    float: left;
+}
+
+.s1 {
+    font-size: 500%;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s2 {
+    font-size: 120%;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s3 {
+    width:auto;
+    z-index: 11111;
+    margin-top: 50px;
+    float: right;
+    font-size: 300%;
+}
+
+.Menu {
+	    overflow: hidden;
+    position: absolute;
+    width: 476px;
+    background-color: #000000b0;
+    opacity: 1;
+    display: block;
+    z-index: 10000;
+    margin-top: 150px;
+}
+
+#Menu1 li {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 140px;
+}
+#btn {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    width: 100px;
+    height: 40px;
+}
+
+
+
+#Menu1 li a:hover {
+    color: lightblue
+}
+
+
+#check {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+

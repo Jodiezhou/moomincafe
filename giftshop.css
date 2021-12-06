@@ -1,0 +1,431 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Itim', cursive;
+	font-size: 18px;
+  background-color: rgba(93, 217, 231, 1);
+      
+}
+#cart{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*Navi*/
+#header {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background: url('headImg/logo.png') no-repeat center center;
+    background: url('headImg/logo.png') no-repeat center center;
+     background-size: 200px 200px;
+    background-position-x: 2%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+#divFont {
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    float: left;
+}
+
+.s1 {
+    font-size: 500%;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+@media (min-width: 870px) and (max-width: 1200px){
+    .s1{
+        font-size: 40px;
+    }
+}
+.s2 {
+    font-size: 120%;
+    background: linear-gradient(to right, #80aded 0%, #2447d3 100%);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+.s3 {
+    width:auto;
+    z-index: 11111;
+    margin-top: 50px;
+    float: right;
+    font-size: 300%;
+}
+
+.Menu {
+    right:0!important;
+    position: absolute;
+    width: 300px!important;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    display: block;
+    z-index: 10000;
+    margin-top: 100px;
+    overflow: hidden;
+    display: none;
+}
+
+#Menu1 li {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 140px;
+}
+
+#btn {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    width: 100px;
+    height: 40px;
+}
+#Menu1 li a{
+    color:#5091eb
+}
+#Menu1 li a:hover {
+    color: lightblue
+}
+
+
+
+
+
+
+
+
+/*for image section*/
+.cover{
+    width:80%;
+}
+h1 {
+  font-size: 4vw;
+text-align: center;
+    color:darkorange;
+ 
+}
+.buttonposition{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title2 h2{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 30px;
+    border-bottom: 1px dotted black;
+}
+.title2{
+    width:50%;
+    margin:100px auto 100px auto;
+    height:inherit;
+}
+
+/*for button section*/
+.btn {
+    font-family: 'Itim', cursive;
+  border: none;
+  background-color: inherit;
+  padding: 14px 30px;
+  font-size: 1.6vw;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.toy {
+  color: green;
+    border-radius:10%;
+     border:3px dotted rgb(240,91,64);
+    
+}
+
+.toy:hover {
+  background-color:coral;
+  color: white;
+}
+
+
+.stationary {
+  color: dodgerblue;
+  border-radius:10%;
+    border:3px dotted rgb(241,134,182);
+}
+
+.stationary:hover {
+  background-color: antiquewhite;
+  color: white;
+}
+
+
+.accessories {
+  color: orange;
+  border-radius:10%;
+     border:3px dotted rgb(138,170,217);
+}
+
+.accessories:hover {
+    background-color:lightblue;
+  color: white;
+}
+
+
+.travel {
+    border-radius:10%;
+     border:3px dotted rgb(141,198,63);
+}
+
+.travel:hover {
+  background-color:greenyellow;
+}
+
+
+.books {
+  color: black;
+    border-radius:10%;
+     border:3px dotted rgb(243,132,141);
+}
+
+.books:hover {
+  background-color: antiquewhite;
+}
+
+
+
+
+p {
+  color:darkgray;
+}
+.container1 {
+  text-align: center;
+  color:red;
+
+    cursor:pointer;
+}
+.split-columns {
+  width:80%;
+  display:flex;
+    margin:0 auto 0 auto;
+  text-align: center;
+
+}
+.column1 {
+  width:33.3%;
+  border:none;
+  padding:20 40;
+
+}
+
+.column2 {
+  width:33.3%;
+  border:none;
+  padding:20 40;
+}
+.column3 {
+  width:33.3%;
+  border:none;
+  padding:20 40;
+}
+
+.footer {
+      position:relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:beige;
+      color: Grey;
+      text-align: center;
+    line-height: 30px;
+    
+    }
+    p {
+      color:grey;
+    }
+}
+
+@media all and (max-width:3000px) {
+  .column1 {
+    border:none;
+  }
+  .column2 {
+    border:none;
+  }
+  .column3 {
+    border:none;
+  }
+  .column4 {
+  border:none;
+  }
+  .footer {
+      position:relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #b9bbbf;
+      color: Grey;
+      text-align: center;
+    }
+    p10 {
+      background-color: #b9bbbf;
+    }
+}
+@media all and (max-width:1200px) {
+  .split-columns {
+      width:100%;
+    display: inline-block;
+    margin:0 auto 0 auto;
+      
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .column3 {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width:620px) {
+    
+  .split-columns {
+      width:100%;
+    display: inline-block;
+      margin:0 auto 0 auto;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .column3 {
+    width: 100%;
+  }
+  .column4 {
+    width: 100%;
+  }
+}
+
+
+
+
+/*media adjustment */
+
+@media all and (max-width: 700px) {
+    
+    .btn {
+    font-family: 'Itim', cursive;
+  border: none;
+  background-color: inherit;
+  padding: 14px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+        
+}
+    .title2 h2{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+    color:
+}
+.title2{
+    width:50%;
+    margin:30px auto 30px auto;
+    height:inherit;
+}
+
+
+.toy {
+  color: green;
+    border-radius:10%;
+    
+}
+
+.toy:hover {
+  background-color:coral;
+  color: white;
+}
+
+
+.stationary {
+  color: dodgerblue;
+  border-radius:10%;
+}
+
+.stationary:hover {
+  background-color: antiquewhite;
+  color: white;
+}
+
+
+.accessories {
+  color: orange;
+  border-radius:10%;
+}
+
+.accessories:hover {
+    background-color:lightblue;
+  color: white;
+}
+
+
+.travel {
+    border-radius:10%;
+}
+
+.travel:hover {
+  background-color:greenyellow;
+}
+
+
+.books {
+  color: black;
+    border-radius:10%;
+}
+
+.books:hover {
+  background-color: antiquewhite;
+}
+    
+ .cover{
+    height:40vh;
+    width:80%;
+}   
+h1 {
+  font-size: 40px;
+text-align: center;
+    color:darkorange;
+ 
+}    
+    
+    
+.logo{
+    width:80%;
+   //padding-bottom: 20px;
+    top:1;
+}
+.v1 {
+	display: none;
+}
+
+
+
+	
+
