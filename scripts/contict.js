@@ -20,7 +20,7 @@
         }
     }).blur(function () {
         if ($(this).val() == "") {
-            $(this).val("name");
+            $(this).val("Email");
         }
     })
 
@@ -31,7 +31,7 @@
         }
     }).blur(function () {
         if ($(this).val() == "") {
-            $(this).val("Email");
+            $(this).val("Phone Number");
         }
     })
 
@@ -41,7 +41,7 @@
         }
     }).blur(function () {
         if ($(this).val() == "") {
-            $(this).val("phone Number");
+            $(this).val("Your Message");
         }
     })
 
